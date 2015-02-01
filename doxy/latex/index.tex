@@ -1,0 +1,15 @@
+\hypertarget{index_problem}{}\section{P\-R\-O\-B\-L\-E\-M S\-T\-A\-T\-E\-M\-E\-N\-T}\label{index_problem}
+Given a set S , find all possible subsets(a,b,c,d) such that a + b + c $\ast$ d ​$<$ ​ k, where​ k and the set S are to be read from user as separated values . Print the results in the form of a tuple “a,b,c,d”.\hypertarget{index_intro}{}\section{I\-N\-T\-R\-O\-D\-U\-C\-T\-I\-O\-N}\label{index_intro}
+This document contains details of logic used in implementing problem statement of assignment-\/3. The whole logic/program is written in C language. It also contains the comparisons of size of executable file amd time take by program to run at various optimization levels done using gprof. The various softwares/packages used were Eclipse(\-I\-D\-E),gcc,gdb,gprof,doxygen,github,latex,astyle,dia.\hypertarget{index_comparisons}{}\section{C\-O\-M\-P\-A\-R\-I\-S\-O\-N\-S}\label{index_comparisons}
+The comparisons are were done using gprof at various optimizations levels. The test set used for comparison contains 20 different input values from 1 to 20 and the value of k was set to 100.
+
+\begin{TabularC}{5}
+\hline
+\rowcolor{lightgray}{\bf Optimization Level }&{\bf Running Time (in sec) for \hyperlink{asg_8c}{asg.\-c} }&{\bf Executable Size (in Kb)for \hyperlink{asg_8c}{asg.\-c} }&{\bf Running Time (in sec) for \hyperlink{asg3_8c}{asg3.\-c} }&{\bf Executable Size (in Kb)for \hyperlink{asg3_8c}{asg3.\-c}  }\\\cline{1-5}
+O0 &26.\-02 &13.\-6 &26.\-02 &13.\-6  \\\cline{1-5}
+O1 &8.\-11 &13.\-5 &26.\-02 &13.\-6  \\\cline{1-5}
+O2 &11.\-37 &13.\-5 &26.\-02 &13.\-6  \\\cline{1-5}
+O3 &11.\-83 &13.\-5 &26.\-02 &13.\-6  \\\cline{1-5}
+Ofast &11.\-84 &15 &26.\-02 &13.\-6  \\\cline{1-5}
+Os &9.\-79 &13.\-5  \\\cline{1-5}
+\end{TabularC}

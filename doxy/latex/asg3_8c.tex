@@ -1,0 +1,139 @@
+\hypertarget{asg3_8c}{\section{asg3.\-c File Reference}
+\label{asg3_8c}\index{asg3.\-c@{asg3.\-c}}
+}
+
+
+Assignment-\/3.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{asg3_8c_a0091813a2ca60743fd9c58f59ef862d0}{combination} (int length, int $\ast$array)
+\begin{DoxyCompactList}\small\item\em combination \end{DoxyCompactList}\item 
+void \hyperlink{asg3_8c_aef03056a974636f1a376c31ae551ad8e}{permutation} (int $\ast$a, int i, int n)
+\begin{DoxyCompactList}\small\item\em permutation \end{DoxyCompactList}\item 
+void \hyperlink{asg3_8c_acd3415eef442ced2b5e064f95f04b624}{swap} (int $\ast$x, int $\ast$y)
+\begin{DoxyCompactList}\small\item\em swap \end{DoxyCompactList}\item 
+void \hyperlink{asg3_8c_a4288dd2dda68c82b7368dcf6300545f7}{save\-\_\-print} (int $\ast$x)
+\begin{DoxyCompactList}\small\item\em save\-\_\-print \end{DoxyCompactList}\item 
+\hypertarget{asg3_8c_a7ca0205c081d7fe4c5b2d7637e556e2b}{int {\bfseries factorial} (int num)}\label{asg3_8c_a7ca0205c081d7fe4c5b2d7637e556e2b}
+
+\item 
+int \hyperlink{asg3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{asg3_8c_ab66ed8e0098c0a86b458672a55a9cca9}{int {\bfseries k}}\label{asg3_8c_ab66ed8e0098c0a86b458672a55a9cca9}
+
+\item 
+int \hyperlink{asg3_8c_a7bdbed4d4d663b1faea41b6a25d6357a}{data\-\_\-p} \mbox{[}100000000\mbox{]}\mbox{[}4\mbox{]}
+\item 
+int \hyperlink{asg3_8c_aa246b9ec3aac65750ebc41ec9e2db618}{number\-\_\-p}
+\item 
+\hypertarget{asg3_8c_a89d2a721c7f55fc2c00e46be773fad6a}{F\-I\-L\-E $\ast$ {\bfseries fp2}}\label{asg3_8c_a89d2a721c7f55fc2c00e46be773fad6a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assignment-\/3. \begin{DoxyAuthor}{Author}
+Honey sharma 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{asg3_8c_a0091813a2ca60743fd9c58f59ef862d0}{\index{asg3.\-c@{asg3.\-c}!combination@{combination}}
+\index{combination@{combination}!asg3.c@{asg3.\-c}}
+\subsubsection[{combination}]{\setlength{\rightskip}{0pt plus 5cm}void combination (
+\begin{DoxyParamCaption}
+\item[{int}]{length, }
+\item[{int $\ast$}]{array}
+\end{DoxyParamCaption}
+)}}\label{asg3_8c_a0091813a2ca60743fd9c58f59ef862d0}
+
+
+combination 
+
+This function calculates the all the combinations of the input passed to it. It calculates a combination and simultaneously calls \hyperlink{asg3_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} to find out all the permutations
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Pointer that points to the input passed to it. \\
+\hline
+\end{DoxyParams}
+\hypertarget{asg3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{asg3.\-c@{asg3.\-c}!main@{main}}
+\index{main@{main}!asg3.c@{asg3.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{asg3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Main function. 
+
+The main function reads/takes the input as a string, tokenizes it and converts the character strings into integer values and stores them into array. It then call the function \hyperlink{asg3_8c_a0091813a2ca60743fd9c58f59ef862d0}{combination()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\mbox{[}$\,$\mbox{]}} & Saves/\-Read into the input string. \\
+\hline
+{\em input1\mbox{[}$\,$\mbox{]}} & Saves the input array after tokenization and and cnversion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{asg3_8c_aef03056a974636f1a376c31ae551ad8e}{\index{asg3.\-c@{asg3.\-c}!permutation@{permutation}}
+\index{permutation@{permutation}!asg3.c@{asg3.\-c}}
+\subsubsection[{permutation}]{\setlength{\rightskip}{0pt plus 5cm}void permutation (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{a, }
+\item[{int}]{i, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{asg3_8c_aef03056a974636f1a376c31ae551ad8e}
+
+
+permutation 
+
+This function calculates the all the permutations of the input passed to it. It simultaneously calls \hyperlink{asg3_8c_a4288dd2dda68c82b7368dcf6300545f7}{save\-\_\-print()} for further processing. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Pointer that points to the input passed to it. \\
+\hline
+\end{DoxyParams}
+\hypertarget{asg3_8c_a4288dd2dda68c82b7368dcf6300545f7}{\index{asg3.\-c@{asg3.\-c}!save\-\_\-print@{save\-\_\-print}}
+\index{save\-\_\-print@{save\-\_\-print}!asg3.c@{asg3.\-c}}
+\subsubsection[{save\-\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void save\-\_\-print (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{asg3_8c_a4288dd2dda68c82b7368dcf6300545f7}
+
+
+save\-\_\-print 
+
+This function saves the permutation calculated alongside discarding those that are repeated.\-It is also called by \hyperlink{asg3_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} function. It finally solves the equation for each saved permutation and prints/redirects it. \hypertarget{asg3_8c_acd3415eef442ced2b5e064f95f04b624}{\index{asg3.\-c@{asg3.\-c}!swap@{swap}}
+\index{swap@{swap}!asg3.c@{asg3.\-c}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void swap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{asg3_8c_acd3415eef442ced2b5e064f95f04b624}
+
+
+swap 
+
+This function swaps the values passed to it. It is used by \hyperlink{asg3_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} function for swapping purposes. 
+
+\subsection{Variable Documentation}
+\hypertarget{asg3_8c_a7bdbed4d4d663b1faea41b6a25d6357a}{\index{asg3.\-c@{asg3.\-c}!data\-\_\-p@{data\-\_\-p}}
+\index{data\-\_\-p@{data\-\_\-p}!asg3.c@{asg3.\-c}}
+\subsubsection[{data\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int data\-\_\-p\mbox{[}100000000\mbox{]}\mbox{[}4\mbox{]}}}\label{asg3_8c_a7bdbed4d4d663b1faea41b6a25d6357a}
+This variable saves the all unique permutation calculated. \hypertarget{asg3_8c_aa246b9ec3aac65750ebc41ec9e2db618}{\index{asg3.\-c@{asg3.\-c}!number\-\_\-p@{number\-\_\-p}}
+\index{number\-\_\-p@{number\-\_\-p}!asg3.c@{asg3.\-c}}
+\subsubsection[{number\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int number\-\_\-p}}\label{asg3_8c_aa246b9ec3aac65750ebc41ec9e2db618}
+It value denotes the total number of unique permutations. 

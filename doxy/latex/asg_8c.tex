@@ -1,0 +1,171 @@
+\hypertarget{asg_8c}{\section{asg.\-c File Reference}
+\label{asg_8c}\index{asg.\-c@{asg.\-c}}
+}
+
+
+Assignment-\/3.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{asg_8c_a0091813a2ca60743fd9c58f59ef862d0}{combination} (int length, int $\ast$array)
+\begin{DoxyCompactList}\small\item\em combination \end{DoxyCompactList}\item 
+void \hyperlink{asg_8c_aef03056a974636f1a376c31ae551ad8e}{permutation} (int $\ast$a, int i, int n)
+\begin{DoxyCompactList}\small\item\em permutation \end{DoxyCompactList}\item 
+void \hyperlink{asg_8c_acd3415eef442ced2b5e064f95f04b624}{swap} (int $\ast$x, int $\ast$y)
+\begin{DoxyCompactList}\small\item\em swap \end{DoxyCompactList}\item 
+void \hyperlink{asg_8c_a8ad3e135fc04bb029827e2ab83987fe5}{save} (int $\ast$x)
+\begin{DoxyCompactList}\small\item\em save \end{DoxyCompactList}\item 
+void \hyperlink{asg_8c_a83f8adca24e250bfb5c9a90a35503ae9}{check} ()
+\begin{DoxyCompactList}\small\item\em check \end{DoxyCompactList}\item 
+int \hyperlink{asg_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{asg_8c_a6ba7f60990f737b2dced290ace923c50}{data\-\_\-c} \mbox{[}10000000\mbox{]}\mbox{[}4\mbox{]}
+\item 
+int \hyperlink{asg_8c_a5381269bc83a60f02501737b666aa177}{data\-\_\-p} \mbox{[}10000000\mbox{]}\mbox{[}4\mbox{]}
+\item 
+int \hyperlink{asg_8c_aa0e03ef7e64fa47121841fbc7e9c1b8c}{data\-\_\-o} \mbox{[}10000000\mbox{]}\mbox{[}4\mbox{]}
+\item 
+\hypertarget{asg_8c_afe7b8645aaf3b4e9fac38a2d58969aab}{int {\bfseries number\-\_\-c}}\label{asg_8c_afe7b8645aaf3b4e9fac38a2d58969aab}
+
+\item 
+\hypertarget{asg_8c_aa246b9ec3aac65750ebc41ec9e2db618}{int {\bfseries number\-\_\-p}}\label{asg_8c_aa246b9ec3aac65750ebc41ec9e2db618}
+
+\item 
+\hypertarget{asg_8c_a2f2a0dc1c879f6e946e5f732d7a54713}{int {\bfseries number\-\_\-o}}\label{asg_8c_a2f2a0dc1c879f6e946e5f732d7a54713}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assignment-\/3. \begin{DoxyAuthor}{Author}
+Honey sharma 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{asg_8c_a83f8adca24e250bfb5c9a90a35503ae9}{\index{asg.\-c@{asg.\-c}!check@{check}}
+\index{check@{check}!asg.c@{asg.\-c}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}void check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{asg_8c_a83f8adca24e250bfb5c9a90a35503ae9}
+
+
+check 
+
+This function checks whether a particular permutation is repeated or not. If repeated it simply discards it. \hypertarget{asg_8c_a0091813a2ca60743fd9c58f59ef862d0}{\index{asg.\-c@{asg.\-c}!combination@{combination}}
+\index{combination@{combination}!asg.c@{asg.\-c}}
+\subsubsection[{combination}]{\setlength{\rightskip}{0pt plus 5cm}void combination (
+\begin{DoxyParamCaption}
+\item[{int}]{length, }
+\item[{int $\ast$}]{array}
+\end{DoxyParamCaption}
+)}}\label{asg_8c_a0091813a2ca60743fd9c58f59ef862d0}
+
+
+combination 
+
+This function calculates the all the combinations of the input passed to it and saves them in array data\-\_\-c.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Pointer that points to the input passed to it.\\
+\hline
+\end{DoxyParams}
+This function calculates the all the combinations of the input passed to it. It calculates a combination and simultaneously calls \hyperlink{asg3_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} to find out all the permutations
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Pointer that points to the input passed to it. \\
+\hline
+\end{DoxyParams}
+\hypertarget{asg_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{asg.\-c@{asg.\-c}!main@{main}}
+\index{main@{main}!asg.c@{asg.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{asg_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Main function. 
+
+The main function reads/takes the input as a string, tokenizes it and converts the character strings into integer values and stores them into array. It then calls the functions \hyperlink{asg_8c_a0091813a2ca60743fd9c58f59ef862d0}{combination()},\hyperlink{asg_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} and \hyperlink{asg_8c_a83f8adca24e250bfb5c9a90a35503ae9}{check()} and finally prints/saves the output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\mbox{[}$\,$\mbox{]}} & Saves/\-Read into the input string. \\
+\hline
+{\em input1\mbox{[}$\,$\mbox{]}} & Saves the input array after tokenization and and cnversion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{asg_8c_aef03056a974636f1a376c31ae551ad8e}{\index{asg.\-c@{asg.\-c}!permutation@{permutation}}
+\index{permutation@{permutation}!asg.c@{asg.\-c}}
+\subsubsection[{permutation}]{\setlength{\rightskip}{0pt plus 5cm}void permutation (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{a, }
+\item[{int}]{i, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{asg_8c_aef03056a974636f1a376c31ae551ad8e}
+
+
+permutation 
+
+This function calculates the all the permutations of the input passed to it and saves them in array data\-\_\-p.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pointer that points to the input passed to it.\\
+\hline
+\end{DoxyParams}
+This function calculates the all the permutations of the input passed to it. It simultaneously calls \hyperlink{asg3_8c_a4288dd2dda68c82b7368dcf6300545f7}{save\-\_\-print()} for further processing. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Pointer that points to the input passed to it. \\
+\hline
+\end{DoxyParams}
+\hypertarget{asg_8c_a8ad3e135fc04bb029827e2ab83987fe5}{\index{asg.\-c@{asg.\-c}!save@{save}}
+\index{save@{save}!asg.c@{asg.\-c}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void save (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{asg_8c_a8ad3e135fc04bb029827e2ab83987fe5}
+
+
+save 
+
+This function saves the permutation calculated. It is also called by \hyperlink{asg_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} function. \hypertarget{asg_8c_acd3415eef442ced2b5e064f95f04b624}{\index{asg.\-c@{asg.\-c}!swap@{swap}}
+\index{swap@{swap}!asg.c@{asg.\-c}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void swap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{asg_8c_acd3415eef442ced2b5e064f95f04b624}
+
+
+swap 
+
+This function swaps the values passed to it. It is used by \hyperlink{asg_8c_aef03056a974636f1a376c31ae551ad8e}{permutation()} function for swapping purposes. 
+
+\subsection{Variable Documentation}
+\hypertarget{asg_8c_a6ba7f60990f737b2dced290ace923c50}{\index{asg.\-c@{asg.\-c}!data\-\_\-c@{data\-\_\-c}}
+\index{data\-\_\-c@{data\-\_\-c}!asg.c@{asg.\-c}}
+\subsubsection[{data\-\_\-c}]{\setlength{\rightskip}{0pt plus 5cm}int data\-\_\-c\mbox{[}10000000\mbox{]}\mbox{[}4\mbox{]}}}\label{asg_8c_a6ba7f60990f737b2dced290ace923c50}
+2-\/\-D array that stores all the combinations of input. \hypertarget{asg_8c_aa0e03ef7e64fa47121841fbc7e9c1b8c}{\index{asg.\-c@{asg.\-c}!data\-\_\-o@{data\-\_\-o}}
+\index{data\-\_\-o@{data\-\_\-o}!asg.c@{asg.\-c}}
+\subsubsection[{data\-\_\-o}]{\setlength{\rightskip}{0pt plus 5cm}int data\-\_\-o\mbox{[}10000000\mbox{]}\mbox{[}4\mbox{]}}}\label{asg_8c_aa0e03ef7e64fa47121841fbc7e9c1b8c}
+2-\/\-D array that stores all the final unique permutations of input. \hypertarget{asg_8c_a5381269bc83a60f02501737b666aa177}{\index{asg.\-c@{asg.\-c}!data\-\_\-p@{data\-\_\-p}}
+\index{data\-\_\-p@{data\-\_\-p}!asg.c@{asg.\-c}}
+\subsubsection[{data\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int data\-\_\-p\mbox{[}10000000\mbox{]}\mbox{[}4\mbox{]}}}\label{asg_8c_a5381269bc83a60f02501737b666aa177}
+2-\/\-D array that stores all the permutations of input. 
